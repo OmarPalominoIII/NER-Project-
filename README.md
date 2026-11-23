@@ -65,6 +65,5 @@ Extracts entities via structured JSON prompting in an LLM chat interface, saves 
 
 **4. Evaluation (ner/evaluation.py):**
 Computes micro and per-entity-type Precision, Recall, and F1-Score against the gold standard across two modes:
-    - Strict Evaluation (evaluate_ner_strict): Requires an exact match of (start, end, label).
-
-    - Relaxed Evaluation (evaluate_ner_relaxed): Ignores character offsets and normalizes whitespace (\s+), evaluating (label, normalized_text) across both occurrences and unique entities per document.
+- Strict Evaluation (evaluate_ner_strict): Requires an exact match of (start, end, label).
+- Relaxed Evaluation (evaluate_ner_relaxed): Ignores character offsets and normalizes whitespace (\s+), evaluating (label, normalized_text) across both occurrences and unique entities per document.
